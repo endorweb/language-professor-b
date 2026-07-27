@@ -274,12 +274,6 @@
         box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.352);
     }
 
-    .sub-content>.smalltalk-a>img {
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-    }
-
 
     /* Content -> Smalltalk-b */
     .sub-content>.smalltalk-b {
@@ -297,11 +291,7 @@
 
     }
 
-    .sub-content>.smalltalk-b>img {
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-    }
+
 
     /* Footer For Mobile */
     .main-contact {
