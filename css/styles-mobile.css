@@ -155,8 +155,6 @@
 /****** For Cards & why learn with Laura ******/
 @media(max-width: 480px) {
 
-
-
     /* Cards */
     .sub-cards {
         display: flex;
@@ -245,12 +243,12 @@
         height: 100%;
         display: block;
         position: relative;
-        right: -130px;
+        right: -90px;
         z-index: -1;
     }
 
     .sub-content>div>button {
-        background-color: rgb(186, 3, 3);
+        background-color: #643ca1;
         padding: 10px 15px;
         border-radius: 50px;
         border: none;
@@ -291,6 +289,10 @@
 
     }
 
+    .sub-content>div>h1 {
+        width: 70%;
+    }
+
 
 
     /* Footer For Mobile */
@@ -324,25 +326,21 @@
 
     .main-content>.img-content {
         position: absolute;
-        top: 140px;
+        top: 170px;
         /* right: -100px; */
         overflow-x: hidden;
         margin: 0 !important;
     }
 
     /* Content -> Smalltalk-a / Smalltalk-b */
-    .sub-content>.smalltalk-a {
-        top: 390px;
-    }
-
     /* Content -> Smalltalk-b */
     .sub-content>.smalltalk-b {
-        /* bottom: 0px; */
-
+        position: absolute;
+        bottom: 20px;
     }
 
     .sub-content>div>h1 {
-        width: 58%;
+        width: 55%;
     }
 
     /* Footer For Mobile */

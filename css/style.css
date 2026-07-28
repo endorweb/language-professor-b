@@ -18,12 +18,7 @@ body {
 
     min-height: 100vh;
     font-size: 1.1em;
-    background: radial-gradient(circle at 10% 15%, #d9e5ff 0%, transparent 40%),
-        radial-gradient(circle at 90% 10%, #ffe3df 0%, transparent 35%),
-        radial-gradient(circle at 25% 90%, #eef5ff 0%, transparent 35%),
-        radial-gradient(circle at 90% 85%, #78caeb53 0%, transparent 35%),
-        #f8f9fc;
-    ;
+    background: linear-gradient(135deg, #643ca186 0%, white 100%);
 }
 
 input {
@@ -45,7 +40,12 @@ input {
 }
 
 .nummer {
-    display: none;
+    background-color: #643ca1;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
 }
 
 .sub-header {
@@ -92,11 +92,7 @@ li a,
 
 .catlist {
     position: absolute;
-    background: radial-gradient(circle at 10% 15%, #d9e5ff 0%, transparent 40%),
-        radial-gradient(circle at 90% 10%, #ffe3df 0%, transparent 35%),
-        radial-gradient(circle at 25% 90%, #eef5ff 0%, transparent 35%),
-        radial-gradient(circle at 90% 85%, #fff0d8 0%, transparent 35%),
-        #f8f9fc;
+    background-color: #643ca1;
 
     display: none;
     padding: 10px;
@@ -109,7 +105,7 @@ li a,
 }
 
 .catlist>a {
-    color: black;
+    color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(186, 186, 186);
 }
 
@@ -119,11 +115,12 @@ li a,
     gap: 13px;
     left: 230px;
     width: 40%;
+    align-items: left;
 }
 
 .catlist>a:hover {
-    background-color: rgb(50, 125, 175);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 
@@ -134,23 +131,31 @@ li a,
     gap: 5px;
 }
 
-.contact>p {
+.contact>button {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+    background-color: rgb(49, 255, 18);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact>button>a {
     font-size: 1.1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+
 }
 
-.contact>a {
-    color: rgb(50, 125, 175);
-}
-
-.contact>a:hover {
-    color: rgb(6, 6, 4);
-}
-
-.contact>a>.fa-brands {
-    font-size: 25px;
-    margin-right: 18px;
+.contact>div>a>.fa-brands {
+    font-size: 20px;
+    margin-right: 14px;
+    background-color: #643ca1;
+    padding: 6px;
+    color: white;
+    border-radius: 100px;
 }
 
 
@@ -160,7 +165,8 @@ li a,
 }
 
 .sub-content {
-    font-size: 1.1em
+    font-size: 1.1em;
+    position: relative;
 }
 
 .sub-content>.banntitel {
@@ -180,7 +186,7 @@ li a,
 }
 
 .sub-content>div>button {
-    background-color: rgb(186, 3, 3);
+    background-color: #643ca1;
     padding: 10px 30px;
     border-radius: 80px;
     border: none;
@@ -194,8 +200,8 @@ li a,
 
 .main-content>.img-content {
     position: absolute;
-    top: 60px;
-    right: 10px;
+    top: 130px;
+    right: 0;
 }
 
 .main-content>.img-content>img {
@@ -205,12 +211,25 @@ li a,
     position: relative;
 }
 
+/* Dots */
+.dots {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    border-radius: 100px;
+
+    width: 120px;
+    height: 120px;
+
+    background-image: radial-gradient(white 2px, transparent 2px);
+    background-size: 25px 25px;
+}
 
 /* Content -> Smalltalk-a / Smalltalk-b */
 .sub-content>.smalltalk-a {
     position: absolute;
-    top: 300px;
-    right: 300px;
+    right: 200px;
+    bottom: 150px;
     z-index: 100;
 
     display: flex;
@@ -218,7 +237,6 @@ li a,
     background-color: white;
     padding: 10px;
     line-height: 1.5;
-    margin-bottom: 30px;
     width: 25%;
     font-size: 16px;
     border-radius: 40px;
@@ -235,10 +253,12 @@ li a,
 /* Content -> Smalltalk-b */
 .sub-content>.smalltalk-b {
     position: absolute;
+    bottom: 40px;
+
+    right: 100px;
     display: flex;
     gap: 10px;
     z-index: 100;
-    right: 10px;
 
     background-color: white;
     padding: 10px;
@@ -263,7 +283,7 @@ li a,
     line-height: 1.5;
     font-size: 1.1em;
     position: relative;
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
 .sub-cards {
