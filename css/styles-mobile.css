@@ -239,7 +239,7 @@
     }
 
     .main-content>.img-content>img {
-        width: 370px;
+        width: 390px;
         height: 100%;
         display: block;
         position: relative;
@@ -290,7 +290,8 @@
     }
 
     .sub-content>div>h1 {
-        width: 70%;
+        width: 85%;
+        font-size: 1.4em;
     }
 
 
