@@ -135,7 +135,7 @@ li a,
     background-color: transparent;
     border: none;
     margin-right: 30px;
-    background-color: rgb(49, 255, 18);
+    background-color: rgb(167, 2, 2);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -145,7 +145,7 @@ li a,
     font-size: 1.1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 
